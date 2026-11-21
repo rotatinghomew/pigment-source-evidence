@@ -1,0 +1,5 @@
+id,kind,target,start,end,crew
+K1,weigh,S4,80,95,Q1
+K2,retain,J5,85,105,Q1
+K3,unpack,J4,90,104,Q2
+K4,retain,J2,110,118,Q1

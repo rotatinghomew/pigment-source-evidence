@@ -1,0 +1,131 @@
+{
+  "tables": {
+    "source_batches": {
+      "key": [
+        "id"
+      ],
+      "columns": [
+        "id",
+        "shade",
+        "value_min",
+        "value_max",
+        "quantity"
+      ]
+    },
+    "scale": {
+      "key": [
+        "id"
+      ],
+      "columns": [
+        "id",
+        "batch",
+        "vessel",
+        "from",
+        "to",
+        "visible",
+        "weight_min",
+        "weight_max",
+        "repair_of"
+      ]
+    },
+    "vessels": {
+      "key": [
+        "vessel",
+        "at"
+      ],
+      "columns": [
+        "vessel",
+        "at",
+        "event"
+      ]
+    },
+    "links": {
+      "key": [
+        "id"
+      ],
+      "columns": [
+        "id",
+        "vessel",
+        "from",
+        "to",
+        "weight",
+        "shade",
+        "min",
+        "max",
+        "position",
+        "state"
+      ]
+    },
+    "retains": {
+      "key": [
+        "id"
+      ],
+      "columns": [
+        "id",
+        "job",
+        "measure_at",
+        "visible",
+        "value",
+        "error"
+      ]
+    },
+    "isolation": {
+      "key": [
+        "id"
+      ],
+      "columns": [
+        "id",
+        "position",
+        "limit",
+        "start",
+        "end",
+        "occupied_by"
+      ]
+    },
+    "inquiries": {
+      "key": [
+        "id"
+      ],
+      "columns": [
+        "id",
+        "kind",
+        "target",
+        "start",
+        "end",
+        "crew"
+      ]
+    }
+  },
+  "links": [
+    [
+      "scale",
+      "batch",
+      "source_batches",
+      "id"
+    ],
+    [
+      "scale",
+      "repair_of",
+      "scale",
+      "id"
+    ],
+    [
+      "links",
+      "vessel",
+      "vessels",
+      "vessel"
+    ],
+    [
+      "retains",
+      "job",
+      "links",
+      "id"
+    ],
+    [
+      "isolation",
+      "occupied_by",
+      "links",
+      "id"
+    ]
+  ]
+}

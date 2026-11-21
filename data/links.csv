@@ -1,0 +1,6 @@
+id,vessel,from,to,weight,shade,min,max,position,state
+J1,M1,19,26,22,red,8,10.3,P1,sent
+J2,M1,27,32,25,red,8,10.1,P1,floor
+J3,M2,31,36,17,red,8,10.0,P2,floor
+J4,M2,38,45,25,red,8,10.3,P3,floor
+J5,M2,46,49,22,red,8,10.3,P2,floor

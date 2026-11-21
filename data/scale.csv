@@ -1,0 +1,7 @@
+id,batch,vessel,from,to,visible,weight_min,weight_max,repair_of
+S1,B1,M1,10,20,20,30,50,
+S2,B2,M1,14,24,24,20,45,
+S3,B3,M2,20,30,30,15,30,
+S4,B2,M2,24,36,36,20,45,
+S5,B4,M2,28,40,40,16,35,
+S6,B2,M1,22,24,69,21,22,S2

@@ -1,0 +1,4 @@
+id,position,limit,start,end,occupied_by
+I1,"P1,P2",25,60,120,J2
+I2,"P2,P3",25,60,120,
+I3,P2,18,70,130,
